@@ -1,4 +1,5 @@
-<heading> A LightGBM based efficient Machine Learning model on Costa Rican Household Poverty Level Dataset. </heading>
+<heading> A LightGBM based efficient Machine Learning model on Costa Rican Household Poverty Level Dataset.
+
 Contributors - Abhinandan Mohanty, Mohammed Hadi Dadan, Jyotisman Rath
 This is as a submission to BVEST Beat The Base Hackathon on 5th Nov 2020.
   
