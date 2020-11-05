@@ -1,23 +1,29 @@
-<b> Light GBM model-costarica
-</br>
+<heading> A LightGBM based efficient Machine Learning model on Costa Rican Household Poverty Level Dataset. </heading>
+Contributors - Abhinandan Mohanty, Mohammed Hadi Dadan, Jyotisman Rath
+This is as a submission to BVEST Beat The Base Hackathon on 5th Nov 2020.
+  
+Background Info -
+The dataset used here-in is available on Kaggle (https://www.kaggle.com/c/costa-rican-household-poverty-prediction/) as an old Machine Learning challenge. The primary objective is to use certain social and economic parameters provided to predict poverty on a household basis. The dataset is developed by IDB, the Inter-American Development Bank, with ain aim of establishing and making use of modern methods for properly identifying families at that need financial assitance or help.
 
-The Costa Rican Household Poverty Level Prediction challenge is a data science for good machine learning competition currently running on Kaggle. The objective is to use individual and household socio-economic indicators to predict poverty on a household basis. IDB, the Inter-American Development Bank, developed the problem and provided the data with the goal of improving upon traditional methods for identifying families at need of aid.
-The general approach to a machine learning problem is:
-1.	Understand the problem and data descriptions
-2.	Data cleaning / exploratory data analysis
-3.	Feature engineering / feature selection
-4.	Model comparison
-5.	Model optimization
-6.	Interpretation of results
-Data types of variables: There are four data types associated with the variables in the data set:
-1.	Boolean: Integer Boolean (0 or 1), Character Boolean (yes or no). Columns such as paredblolad, noelec, etc.
-2.	Float data type. For example, meaneduc, overcrowding, etc.
-3.	Integer data type. For example, age, rent, rooms, tamviv, etc.
-4.	Alpha-numeric. For example, Id, idhogar.
+Our approach to this ML problem was as follows -
+1.	Understanding the problem and data descriptions
+2.	Exploratory data analysis (EDA - cleaning of data)
+3.	Selecting proper features/parameters (Feature Engineering)
+4.	Model comparison and optimization
+5.	Interpreting and presenting results
+
+There are four data types associated with the variables in the data set:
+1.	Boolean: Integer Boolean (0 or 1), Character Boolean (yes or no). Columns such as paredblolad, noelec, etc. <br>
+2.	Float data type. For example, meaneduc, overcrowding, etc. <br>
+3.	Integer data type. For example, age, rent, rooms, tamviv, etc. <br>
+4.	Alpha-numeric. For example, Id, idhogar. <br>
+
 Data Exploration and Data Cleaning
 For an easy first step of data exploration, we can visualize the distribution of the labels for the training data (we are not given the testing labels).
 Distribution of training labels.
+
 I’m using *statistical type *to mean what the data represents — for example a Boolean that can only be 1 or 0 — and *data type *to mean the actual way the values are stored in Python such as integers or floats. The statistical type informs how we handle the columns for feature engineering.
+
 Missing Values
 A critical data cleaning operation for this data is handling missing values. To calculate the total and percent of missing values is simple in Pandas
 Light Gradient Boosting Machine Implementation
@@ -26,25 +32,6 @@ Model Optimization
 Model optimization means searching for the model hyperparameters that yield the best performance — measured in cross-validation — for a given dataset.
 
 Conclusions
-In this notebook, we went through a step-by-step implementation of an entire data science solution to a real-world problem. Machine learning is really just a series of steps, each simple by themselves, with the overall result often extremely powerful.
-Our path was as follows:
-1.	Understand the problem
-2.	Exploratory Data Analysis
-•	Deal with data issues
-•	Fill in missing values
-3.	Feature Engineering
-•	Aggregate data
-•	Feature selection in stages
-4.	Model Selection
-•	Try many different models to see which one is most promising
-•	Feature selection can also come into play
-5.	Model Optimization
-•	Choose the best performing model and tune
-6.	Implementing best model
-7.	Investigate predictions
-•	Identify model shortcomings
-8.	Try new techniques
-•	Experiment and learn!
 
+It was indeed an interesting Machine Learning challenge. Provided the time constraints, the model seems to perform excellent, thanks to LightGBM. The notebook provided is the original code that inlcudes our work step-by-step. we think that other algorithms like XGBoost and Random Forest may help to improve overall accuracy but this is perfect for now. No doubt, such a challenge proves the efficacy of Machine Learning and AI as a tool in solving societal problems in reality.
 
-An efficient classification model built on Costa Rica Housing Poverty data set.
