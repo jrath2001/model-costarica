@@ -23,12 +23,14 @@ Data Exploration and Data Cleaning
 For an easy first step of data exploration, we can visualize the distribution of the labels for the training data (we are not given the testing labels).
 Distribution of training labels.
 
-I’m using *statistical type *to mean what the data represents — for example a Boolean that can only be 1 or 0 — and *data type *to mean the actual way the values are stored in Python such as integers or floats. The statistical type informs how we handle the columns for feature engineering.
-
 Missing Values
 A critical data cleaning operation for this data is handling missing values. To calculate the total and percent of missing values is simple in Pandas
+
 Light Gradient Boosting Machine Implementation
-This functionimplements training the gradient boosting machine with Stratified Kfold cross validation and early stopping to prevent overfitting to the training data (although this can still occur). The function performs training with cross validation and records the predictions in probability for each fold. To see how this works, we can return the predictions from each fold and then we'll return a submission to upload to the competition.
+This function implements training the gradient boosting machine with Stratified Kfold cross validation and early stopping to prevent overfitting to the training data (although this can still occur). The function performs training with cross validation and records the predictions in probability for each fold. To see how this works, we can return the predictions from each fold and then we'll return a submission to upload to the competition.
+
+
+
 Model Optimization
 Model optimization means searching for the model hyperparameters that yield the best performance — measured in cross-validation — for a given dataset.
 
